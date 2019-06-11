@@ -1,5 +1,5 @@
 {
-  "homepage" : "https://www.iarc.org/skforest/",
+  "homepage" : "https://localhost/skforest/",
   "name": "skforest_client",
   "version": "0.1.0",
   "private": true,

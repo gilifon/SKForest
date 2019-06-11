@@ -1,5 +1,5 @@
 const express = require("express"); //easy routing
-//const http = require('http');
+const http = require('http');
 const https = require('https');
 var fs = require('fs');
 const compression = require("compression"); //compress http response
@@ -30,13 +30,17 @@ app.use(cors); //allow cors
 //api routes
 app.use("/api", require("./routes/api/api_sk"));
 
-//const httpServer = http.createServer(app);
+const httpServer = http.createServer(app);
 const httpsServer = https.createServer(credentials, app);
 
-const PORT = process.env.PORT || 5000;
+const HTTP_PORT = process.env.PORT || 5000;
+const HTTPS_PORT = process.env.PORT || 5001;
 // app.listen(PORT, () => {
 //   console.log(`server running on ${PORT}`);
 // });
-httpsServer.listen(PORT, () => {
-  console.log(`server running on ${PORT}`);
+httpServer.listen(HTTP_PORT, () => {
+  console.log(`server running on ${HTTP_PORT}`);
+});
+httpsServer.listen(HTTPS_PORT, () => {
+  console.log(`server running on ${HTTPS_PORT}`);
 });
