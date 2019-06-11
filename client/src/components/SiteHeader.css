@@ -1,0 +1,23 @@
+.App-header {
+  background-image: url(../assets/headerbg2.png);
+  background-size: 100vw calc(100vw / (1280 / 125));
+  text-align: center;
+  height: calc(100vw / (1280 / 125));
+  width: 100%;
+  display: block;
+  font-family: "Amatic SC";
+  font-size: calc(50vw / (1280 / 125));
+  font-weight: 800;
+  color: black;
+}
+
+.headerText {
+  color: rgb(245, 227, 204);
+  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+
+.candleImage {
+  width: 12%;
+  min-width: 150px;
+  margin-left: -15%;
+}

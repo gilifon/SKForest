@@ -1,0 +1,11 @@
+.Item {
+  background-color: #eee;
+  text-align: left;
+  min-height: 2vh;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: #000;
+}

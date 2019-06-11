@@ -1,0 +1,40 @@
+body {
+  /* direction: rtl; */
+  background-color: #ccc;
+  color: #000;
+  font-size: 20px;
+}
+
+tbody tr {
+  cursor: pointer;
+}
+
+.narrow {
+  width: 100%;
+}
+.memberItem {
+  color: black;
+  padding: 20px;
+  background-color: rgba(220, 220, 240, 0.5);
+  border: #bbb solid 1px;
+}
+
+.itemName {
+  font-size: calc(2px + 2vmin);
+}
+.itemCall {
+  font-size: calc(10px + 2vmin);
+  font-weight: bold;
+}
+.brickWall {
+  background-image: url("./assets/brick.png");
+  background-repeat: repeat;
+  padding: 15px;
+}
+.mainBG {
+  background-image: url("./assets/body-bg.jpg");
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-size: cover;
+  min-height: calc(100vh - (100vw / (1280 / 125)) - 2.5rem - 14px);
+}
